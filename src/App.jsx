@@ -13,7 +13,7 @@ function App() {
     <Myprovider>
       <BrowserRouter>
           <Routes>
-            <Route index path='/' element={ <Home />} />
+            <Route index path='/Kodigo-Music-App/' element={ <Home />} />
             <Route path='/session' element={ <Session />} />
             <Route path='/player' element={ <Player />} />
           </Routes>
