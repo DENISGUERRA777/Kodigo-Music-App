@@ -11,7 +11,7 @@ export const NavBar = () => {
         <header className="nav-bar-container">
         <nav className="navbar navbar-dark w-80 ">
             <div className="container-fluid">
-                <Link className="navbar-brand"><h2>Kodigo Music</h2></Link>
+                <Link className="navbar-brand" to="/" ><h2>Kodigo Music</h2></Link>
                 <form className="d-flex mx-auto">
                     <input className="form-control me-2" type="search" placeholder="Que quieres escuchar?" aria-label="Search"/>
                     <button className="btn btn-outline-success" type="submit">Buscar</button>
