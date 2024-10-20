@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Myprovider>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
             <Route index path='/' element={ <Home />} />
             <Route path='/session' element={ <Session />} />
