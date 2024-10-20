@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Myprovider>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route index path='/Kodigo-Music-App/' element={ <Home />} />
             <Route path='/session' element={ <Session />} />
