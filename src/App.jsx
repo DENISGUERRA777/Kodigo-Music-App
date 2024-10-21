@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Myprovider>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename="/Kodigo-Music-App/">
           <Routes>
             <Route index path='/' element={ <Home />} />
             <Route path='/session' element={ <Session />} />
