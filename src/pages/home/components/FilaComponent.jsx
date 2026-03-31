@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import PropTypes from "prop-types";
 
 export const FilaCard = (props) => {
     return (
@@ -12,3 +13,8 @@ export const FilaCard = (props) => {
         </section>
     )
 }
+
+FilaCard.propTypes = {
+    lista: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+};

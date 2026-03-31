@@ -1,12 +1,12 @@
 import { Link, useNavigate } from "react-router-dom"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { UserContext } from "../../../assets/context/UserContext";
 
 
 
 export const NavBar = () => {
     const navigate = useNavigate();
-    const {typeForm,setTypeForm} = useContext(UserContext);
+    const {setTypeForm} = useContext(UserContext);
     return(
         <header className="nav-bar-container">
         <nav className="navbar navbar-dark w-80 ">
