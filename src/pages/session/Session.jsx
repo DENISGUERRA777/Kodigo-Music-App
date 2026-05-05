@@ -5,7 +5,7 @@ import { useContext } from "react"
 
 export const Session = () => {
 
-    const {typeForm,setTypeForm} = useContext(UserContext);
+    const {typeForm} = useContext(UserContext);
     return(
         <>
 

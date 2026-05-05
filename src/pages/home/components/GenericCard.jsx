@@ -1,5 +1,6 @@
 
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export const GenericCard = (props) => {
     const navigate = useNavigate();
@@ -14,3 +15,10 @@ export const GenericCard = (props) => {
         </div>
     )
 }
+
+GenericCard.propTypes = {
+    imagen: PropTypes.string.isRequired,
+    alternativo: PropTypes.string.isRequired,
+    infografia: PropTypes.string.isRequired,
+    artista: PropTypes.string.isRequired,
+};

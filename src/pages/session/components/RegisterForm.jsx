@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form'
 import { useNavigate } from "react-router-dom"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { UserContext } from "../../../assets/context/UserContext"
 
 export const RegisterForm = () => {
@@ -8,7 +8,7 @@ export const RegisterForm = () => {
     const {register, handleSubmit, formState: { errors }} = useForm();
     const onSubmitForm = data => console.log(data)
     const navigate = useNavigate();
-    const {typeForm,setTypeForm} = useContext(UserContext);
+    const {setTypeForm} = useContext(UserContext);
 
     return(
         <>
@@ -18,7 +18,7 @@ export const RegisterForm = () => {
                 <label htmlFor="InputEmail" className="form-label">Email address</label>
                 <input type="email" className="form-control" id="InputEmail" aria-describedby="emailHelp" {... register('email', {required: true}) }/>
                 {errors?.email?.type === "required" && <p>This field is required</p>}
-                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                <div id="emailHelp" className="form-text">We&apos;ll never share your email with anyone else.</div>
             </div>
             <div className="mb-3">
                 <label htmlFor="InputPassword" className="form-label">Password</label>

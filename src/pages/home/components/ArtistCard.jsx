@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export const ArtistCard = (props) => {
     const navigate = useNavigate();
@@ -14,3 +15,9 @@ export const ArtistCard = (props) => {
         </div>
     )
 }
+
+ArtistCard.propTypes = {
+    imagen: PropTypes.string.isRequired,
+    alternativo: PropTypes.string.isRequired,
+    artista: PropTypes.string.isRequired,
+};
